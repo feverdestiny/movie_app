@@ -1,0 +1,66 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/movie/index",
+    "pages/movie/detail",
+    "pages/movie/player",
+    "pages/tv/index",
+    "pages/dm/index",
+    "pages/search/index",
+    "pages/person/person",
+    "pages/history/history"
+  ],
+  "window": {
+    "navigationBarTextStyle": "white",
+    "navigationBarTitleText": "兔窝",
+    "navigationBarBackgroundColor": "#fa8587",
+    "backgroundColor": "#fa8587"
+  },
+  "tabBar": {
+    "color": "#7A7E83",
+    "selectedColor": "#fa8587",
+    "borderStyle": "black",
+    "backgroundColor": "#FFFFFF",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "static/sysicon/home_d.png",
+        "selectedIconPath": "static/sysicon/home_a.png",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/movie/index",
+        "iconPath": "static/sysicon/movie_d.png",
+        "selectedIconPath": "static/sysicon/movie_a.png",
+        "text": "电影"
+      },
+      {
+        "pagePath": "pages/tv/index",
+        "iconPath": "static/sysicon/disnhi_d.png",
+        "selectedIconPath": "static/sysicon/disnhi_a.png",
+        "text": "电视剧"
+      },
+      {
+        "pagePath": "pages/dm/index",
+        "iconPath": "static/sysicon/manhua_b.png",
+        "selectedIconPath": "static/sysicon/manhua_a.png",
+        "text": "动漫"
+      },
+      {
+        "pagePath": "pages/person/person",
+        "iconPath": "static/sysicon/person_b.png",
+        "selectedIconPath": "static/sysicon/person_a.png",
+        "text": "个人"
+      }
+    ]
+  },
+  "nvueCompiler": "uni-app",
+  "renderer": "auto",
+  "splashscreen": {
+    "alwaysShowBeforeRender": true,
+    "autoclose": false
+  },
+  "appname": "兔窝",
+  "compilerVersion": "2.4.6",
+  "usingComponents": {}
+}

@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "动漫",
+  "usingComponents": {
+    "base-icon": "/components/base-icon/index"
+  }
+}

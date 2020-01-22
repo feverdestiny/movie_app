@@ -1,0 +1,25 @@
+{
+  "navigationBarTitleText": "搜索",
+  "titleNView": {
+    "titleColor": "#fff",
+    "backgroundColor": "#fa8587",
+    "buttons": [
+      {
+        "fontSrc": "/static/iconfont/iconfont.ttf",
+        "text": "",
+        "width": "auto",
+        "fontSize": "28px",
+        "color": "#fff"
+      }
+    ],
+    "searchInput": {
+      "backgroundColor": "#fff",
+      "borderRadius": "6px",
+      "placeholder": "请输入影片名称 如：长安十二时辰",
+      "autoFocus": true
+    }
+  },
+  "usingComponents": {
+    "base-icon": "/components/base-icon/index"
+  }
+}

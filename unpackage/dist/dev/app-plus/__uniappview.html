@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+    <head>
+        <meta charset="UTF-8" />
+        <script>
+            var coverSupport = 'CSS' in window && typeof CSS.supports === 'function' && (CSS.supports('top: env(a)') ||
+                CSS.supports('top: constant(a)'))
+            document.write(
+                '<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0' +
+                (coverSupport ? ', viewport-fit=cover' : '') + '" />')
+        </script>
+        <title>View</title>
+        <style>
+            * {
+                -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+                -webkit-tap-highlight-color: transparent;
+            }
+
+            input[type="search"]::-webkit-search-cancel-button {
+                display: none;
+            }
+        </style>
+        <script>
+            var __wxConfig = {"debug":false,"appname":"兔窝","entryPagePath":"pages/index/index.html","page":{"pages/index/index.html":{"window":{"navigationBarBackgroundColor":"#fa8587","navigationBarTitleText":"导航栏带搜索框","titleNView":{"type":"transparent","titleText":"影视厅","titleColor":"#fff","backgroundColor":"#fa8587","buttons":[{"fontSrc":"/static/iconfont/iconfont.ttf","text":"","width":"40px","fontSize":"28px","color":"#fff","background":"rgba(0,0,0,0)"}],"searchInput":{"borderRadius":"6px","placeholder":"请输入影片名称 如：长安十二时辰","placeholderColor":"#727272","disabled":true}},"usingComponents":{"base-icon":"/components/base-icon/index"}}},"pages/movie/index.html":{"window":{"navigationBarBackgroundColor":"#fa8587","navigationBarTitleText":"电影","enablePullDownRefresh":true,"usingComponents":{"base-icon":"/components/base-icon/index"}}},"pages/movie/detail.html":{"window":{"backgroundColor":"#181818","navigationBarBackgroundColor":"#fa8587","navigationBarTitleText":"电影详情","usingComponents":{"uni-notice-bar":"/components/uni-notice-bar/uni-notice-bar"}}},"pages/tv/index.html":{"window":{"navigationBarTitleText":"电视剧","usingComponents":{"base-icon":"/components/base-icon/index"}}},"pages/dm/index.html":{"window":{"navigationBarTitleText":"动漫","usingComponents":{"base-icon":"/components/base-icon/index"}}},"pages/search/index.html":{"window":{"navigationBarTitleText":"搜索","titleNView":{"titleColor":"#fff","backgroundColor":"#fa8587","buttons":[{"fontSrc":"/static/iconfont/iconfont.ttf","text":"","width":"auto","fontSize":"28px","color":"#fff"}],"searchInput":{"backgroundColor":"#fff","borderRadius":"6px","placeholder":"请输入影片名称 如：长安十二时辰","autoFocus":true}},"usingComponents":{"base-icon":"/components/base-icon/index"}}},"pages/person/person.html":{"window":{"navigationStyle":"custom","usingComponents":{"base-icon":"/components/base-icon/index"}}},"pages/history/history.html":{"window":{"usingComponents":{}}}},"global":{"window":{"navigationBarTextStyle":"white","navigationBarTitleText":"兔窝","navigationBarBackgroundColor":"#fa8587","backgroundColor":"#fa8587"}},"tabBar":{"color":"#7A7E83","selectedColor":"#fa8587","backgroundColor":"#FFFFFF","borderStyle":"black","list":[{"pagePath":"pages/index/index.html","iconPath":"static/sysicon/home_d.png","selectedIconPath":"static/sysicon/home_a.png","text":"首页"},{"pagePath":"pages/movie/index.html","iconPath":"static/sysicon/movie_d.png","selectedIconPath":"static/sysicon/movie_a.png","text":"电影"},{"pagePath":"pages/tv/index.html","iconPath":"static/sysicon/disnhi_d.png","selectedIconPath":"static/sysicon/disnhi_a.png","text":"电视剧"},{"pagePath":"pages/dm/index.html","iconPath":"static/sysicon/manhua_b.png","selectedIconPath":"static/sysicon/manhua_a.png","text":"动漫"},{"pagePath":"pages/person/person.html","iconPath":"static/sysicon/person_b.png","selectedIconPath":"static/sysicon/person_a.png","text":"个人"}],"position":"bottom"},"networkTimeout":{"request":60000,"connectSocket":60000,"uploadFile":60000,"downloadFile":60000},"platform":"devtools","pages":["pages/index/index","pages/movie/index","pages/movie/detail","pages/tv/index","pages/dm/index","pages/search/index","pages/person/person","pages/history/history","pages/movie/player","pages/movie/player"],"nvue":{"pages":{"pages/movie/player.html":{"window":{"usingComponents":{},"backgroundColor":"#181818","navigationBarBackgroundColor":"#fa8587","navigationBarTitleText":"电影播放"},"nvue":true}}},"nvueCompiler":"uni-app","renderer":"auto","splashscreen":{"alwaysShowBeforeRender":true,"autoclose":false},"compilerVersion":"2.4.6","usingComponents":{}}
+        </script>
+        <script>
+            var __id__ = '';
+            window.__dispatchGenerateFunc__ = function(page) {
+                __id__ = page;
+                document.title = page;
+                // window.history.pushState('', '', page);
+                var wxss = page.replace('.html', '.wxss')
+                if (
+                    typeof __wxAppCode__ !== 'undefined' &&
+                    __wxAppCode__.hasOwnProperty(wxss)
+                ) {
+                    var setCssToHead = __wxAppCode__[wxss]
+                    typeof setCssToHead === 'function' && setCssToHead()
+                    document.dispatchEvent(new CustomEvent("generateFuncReady", {
+                        detail: {
+                            generateFunc: $gwx(page.replace('.html', '.wxml'))
+                        }
+                    }));
+                } else {
+                    plus.webview.currentWebview().setJsFile('_www/' + page.replace('.html', '.js'));
+                }
+            };
+        </script>
+        <script src="__uniappes6.js"></script>
+        <script src="uniapp://ready"></script>
+    </head>
+
+    <body>
+        <div></div>
+    </body>
+
+</html>

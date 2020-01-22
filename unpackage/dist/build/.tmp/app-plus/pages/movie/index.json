@@ -1,0 +1,8 @@
+{
+  "navigationBarBackgroundColor": "#fa8587",
+  "navigationBarTitleText": "电影",
+  "enablePullDownRefresh": true,
+  "usingComponents": {
+    "base-icon": "/components/base-icon/index"
+  }
+}

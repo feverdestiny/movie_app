@@ -1,0 +1,165 @@
+@charset "UTF-8";
+/**
+ * 这里是uni-app内置的常用样式变量
+ *
+ * uni-app 官方扩展插件及插件市场（https://ext.dcloud.net.cn）上很多三方插件均使用了这些样式变量
+ * 如果你是插件开发者，建议你使用scss预处理，并在插件代码中直接使用这些变量（无需 import 这个文件），方便用户通过搭积木的方式开发整体风格一致的App
+ *
+ */
+/**
+ * 如果你是App开发者（插件使用者），你可以通过修改这些变量来定制自己的插件主题，实现自定义主题功能
+ *
+ * 如果你的项目同样使用了scss预处理，你也可以直接在你的 scss 代码中使用如下变量，同时无需 import 这个文件
+ */
+/* 颜色变量 */
+/* 行为相关颜色 */
+/* 文字基本颜色 */
+/* 背景颜色 */
+/* 边框颜色 */
+/* 尺寸变量 */
+/* 文字尺寸 */
+/* 图片尺寸 */
+/* Border Radius */
+/* 水平间距 */
+/* 垂直间距 */
+/* 透明度 */
+/* 文章场景相关 */
+.detail {
+  background: #f5f5f5;
+}
+.detail-head {
+    padding: 20rpx;
+    position: relative;
+    width: 100%;
+    height: 400rpx;
+    background: #ffff;
+}
+.detail-head-img {
+      position: absolute;
+      background: #ccc;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      z-index: 1;
+}
+.detail-head-flex {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: flex;
+      z-index: 2;
+      position: relative;
+}
+.detail-head-flex .item1 {
+        width: 250rpx;
+        height: 380rpx;
+        border-radius: 10px;
+        box-shadow: 6px 6px 20px #333;
+        background-size: 100% 100%;
+}
+.detail-head-flex .item1 .img {
+          width: 100%;
+          height: 100%;
+          display: block;
+          border-radius: 10px;
+          box-shadow: 6px 6px 20px #333;
+}
+.detail-head-flex .item2 {
+        color: #fff;
+        -webkit-box-flex: 1;
+        -webkit-flex: 1;
+                flex: 1;
+        min-width: 0;
+        padding: 25rpx;
+        font-size: 27rpx;
+}
+.detail-head-flex .item2 .name {
+          font-size: 40rpx;
+}
+.detail-head-flex .item2 .text {
+          margin: 15rpx 0;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+          overflow: hidden;
+}
+.detail-head-flex .item2 .buttom {
+          margin-top: 40rpx;
+}
+.detail-head-flex .item2 .buttom .mini-btn {
+            font-size: 30rpx;
+            border-radius: 40rpx;
+            box-shadow: 0 2px 6px rgba(228, 63, 66, 0.2);
+            background: -webkit-linear-gradient(right, #fa6567 0, #fa8587 100%);
+            background: linear-gradient(to left, #fa6567 0, #fa8587 100%);
+}
+.detail .blur {
+    -webkit-filter: blur(10px);
+            filter: blur(10px);
+}
+.detail-add {
+    margin: 30rpx 0;
+    padding-bottom: 20rpx;
+    background: #FFFFFF;
+}
+.detail-add-head {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: flex;
+      padding: 20rpx;
+      font-size: 30rpx;
+      height: 50rpx;
+      line-height: 50rpx;
+}
+.detail-add-head .item1 {
+        width: 60rpx;
+}
+.detail-add-head .item1 .img {
+          width: 100%;
+          height: 100%;
+}
+.detail-add-head .item2 {
+        padding-left: 10rpx;
+        -webkit-box-flex: 1;
+        -webkit-flex: 1;
+                flex: 1;
+}
+.detail-add-main {
+      padding: 20rpx;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-flex-wrap: wrap;
+              flex-wrap: wrap;
+}
+.detail-add-main .button {
+        width: 150rpx;
+        margin: 0 10rpx;
+        text-align: center;
+        padding: 10rpx 0;
+        font-size: 30rpx;
+        border-radius: 40rpx;
+        color: #666;
+        background: #f4f4f4;
+}
+.detail-add-main .active {
+        color: #fff;
+        box-shadow: 0 2px 6px rgba(228, 63, 66, 0.2);
+        background: -webkit-linear-gradient(right, #fa6567 0, #fa8587 100%);
+        background: linear-gradient(to left, #fa6567 0, #fa8587 100%);
+}
+.detail-add-main .button1 {
+        color: #333;
+        width: 30%;
+        height: 50rpx;
+        line-height: 50rpx;
+        background: #f4f4f4;
+        padding: 10rpx 0;
+        margin: 10rpx 10rpx;
+        text-align: center;
+        font-size: 30rpx;
+        font-weight: bold;
+        border-radius: 10rpx;
+        overflow: Hidden;
+        text-overflow: ellipsis;
+}
+

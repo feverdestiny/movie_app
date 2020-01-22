@@ -1,0 +1,6 @@
+{
+  "navigationStyle": "custom",
+  "usingComponents": {
+    "base-icon": "/components/base-icon/index"
+  }
+}

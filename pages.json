@@ -1,0 +1,147 @@
+{
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/index/index",
+			"style": {
+				"navigationBarBackgroundColor": "#fa8587",
+				"navigationBarTitleText": "导航栏带搜索框",
+				"app-plus": {
+					"titleNView": {
+						"type": "transparent",
+						"titleText": "影视厅",
+						"titleColor": "#fff",
+						"backgroundColor": "#fa8587",
+						"buttons": [{
+							// "fontSrc": "/components/base-icon/iconfont/iconfont.ttf",
+							"fontSrc": "/static/iconfont/iconfont.ttf",
+							"text": "\ue65f",
+							"width": "40px",
+							"fontSize": "28px",
+							"color": "#fff",
+							"background": "rgba(0,0,0,0)"
+						}],
+						"searchInput": {
+							"borderRadius": "6px",
+							"placeholder": "请输入影片名称 如：长安十二时辰",
+							"placeholderColor": "#727272",
+							"disabled": true
+						}
+					}
+				}
+			}
+
+		}, {
+			"path": "pages/movie/index",
+			"style": {
+				"navigationBarBackgroundColor": "#fa8587",
+				"navigationBarTitleText": "电影",
+				 "enablePullDownRefresh": true
+			}
+		},
+		{
+			"path": "pages/movie/detail",
+			"style": {
+				"backgroundColor": "#181818",
+				"navigationBarBackgroundColor": "#fa8587",
+				"navigationBarTitleText": "电影详情"
+			}
+		}, 
+		{
+			"path": "pages/movie/player",
+			"style": {
+				"backgroundColor": "#181818",
+				"navigationBarBackgroundColor": "#fa8587",
+				"navigationBarTitleText": "电影播放"
+			}
+		}, {
+			"path": "pages/tv/index",
+			"style": {
+				"navigationBarTitleText": "电视剧"
+			}
+		},
+		{
+			"path": "pages/dm/index",
+			"style": {
+				"navigationBarTitleText": "动漫"
+			}
+		},
+		{
+			"path": "pages/search/index",
+			"style": {
+				"navigationBarTitleText": "搜索",
+				"app-plus": {
+					"titleNView": {
+						"titleColor": "#fff",
+						"backgroundColor": "#fa8587",
+						"buttons": [{
+							"fontSrc": "/static/iconfont/iconfont.ttf",
+							"text": "\ue65f",
+							"width": "auto",
+							"fontSize": "28px",
+							"color": "#fff"
+						}],
+						"searchInput": {
+							"backgroundColor": "#fff",
+							"borderRadius": "6px",
+							"placeholder": "请输入影片名称 如：长安十二时辰",
+							"autoFocus": true
+						}
+					}
+				}
+			}
+		}
+
+	    ,{
+            "path" : "pages/person/person",
+            "style" : {
+				"navigationStyle":"custom"
+			}
+        }
+        ,{
+            "path" : "pages/history/history",
+            "style" : {}
+        }
+    ],
+	"globalStyle": {
+		"navigationBarTextStyle": "white",
+		"navigationBarTitleText": "兔窝",
+		"navigationBarBackgroundColor": "#fa8587",
+		"backgroundColor": "#fa8587"
+	},
+	"tabBar": {
+		"color": "#7A7E83",
+		"selectedColor": "#fa8587",
+		"borderStyle": "black",
+		"backgroundColor": "#FFFFFF",
+		"list": [{
+				"pagePath": "pages/index/index",
+				"iconPath": "static/sysicon/home_d.png",
+				"selectedIconPath": "static/sysicon/home_a.png",
+				"text": "首页"
+			}, {
+				"pagePath": "pages/movie/index",
+				"iconPath": "static/sysicon/movie_d.png",
+				"selectedIconPath": "static/sysicon/movie_a.png",
+				"text": "电影"
+			},
+			{
+				"pagePath": "pages/tv/index",
+				"iconPath": "static/sysicon/disnhi_d.png",
+				"selectedIconPath": "static/sysicon/disnhi_a.png",
+				"text": "电视剧"
+			},
+			{
+				"pagePath": "pages/dm/index",
+				"iconPath": "static/sysicon/manhua_b.png",
+				"selectedIconPath": "static/sysicon/manhua_a.png",
+				"text": "动漫"
+			},
+			{
+				"pagePath": "pages/person/person",
+				"iconPath": "static/sysicon/person_b.png",
+				"selectedIconPath": "static/sysicon/person_a.png",
+				"text": "个人"
+			}
+		]
+	}
+}

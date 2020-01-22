@@ -1,0 +1,29 @@
+{
+  "navigationBarBackgroundColor": "#fa8587",
+  "navigationBarTitleText": "导航栏带搜索框",
+  "titleNView": {
+    "type": "transparent",
+    "titleText": "影视厅",
+    "titleColor": "#fff",
+    "backgroundColor": "#fa8587",
+    "buttons": [
+      {
+        "fontSrc": "/static/iconfont/iconfont.ttf",
+        "text": "",
+        "width": "40px",
+        "fontSize": "28px",
+        "color": "#fff",
+        "background": "rgba(0,0,0,0)"
+      }
+    ],
+    "searchInput": {
+      "borderRadius": "6px",
+      "placeholder": "请输入影片名称 如：长安十二时辰",
+      "placeholderColor": "#727272",
+      "disabled": true
+    }
+  },
+  "usingComponents": {
+    "base-icon": "/components/base-icon/index"
+  }
+}

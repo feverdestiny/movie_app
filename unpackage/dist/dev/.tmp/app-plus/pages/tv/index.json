@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "电视剧",
+  "usingComponents": {
+    "base-icon": "/components/base-icon/index"
+  }
+}

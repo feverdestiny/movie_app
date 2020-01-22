@@ -1,0 +1,8 @@
+{
+  "backgroundColor": "#181818",
+  "navigationBarBackgroundColor": "#fa8587",
+  "navigationBarTitleText": "电影播放",
+  "usingComponents": {
+    "uni-notice-bar": "/components/uni-notice-bar/uni-notice-bar"
+  }
+}
